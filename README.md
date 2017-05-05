@@ -20,10 +20,10 @@ Inspect volumes:
 # docker volume inspect VOLUME_NAME
 
 Take volume path...
-# docker run -v /PATH_TO_VOLUME:/CONTAINER_PATH_TO_VOLUME -p 5432:5432 IMAGE_NAME
+# docker run -v /PATH_TO_VOLUME:/CONTAINER_PATH_TO_VOLUME -p 5432:5432 --name "CONTAINER_NAME" IMAGE_NAME
 
 Marco's PC:
-# docker run -v /mnt/sda1/var/lib/docker/volumes/lab4/_data:/datadb -p 5432:5432 --name postgresql
+# docker run -v /mnt/sda1/var/lib/docker/volumes/lab4/_data:/datadb -p 5432:5432 --name "lab4container" postgres
 
 Log:
 # docker logs -f CONTAINER_NAME
