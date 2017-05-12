@@ -4,7 +4,7 @@
 
 CREATE TABLE public."user"
 (
-    id bigint NOT NULL,
+    id bigserial NOT NULL,
     email character varying(50) NOT NULL,
     password character varying NOT NULL,
     status integer,
